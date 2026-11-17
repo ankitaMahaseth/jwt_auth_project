@@ -9,9 +9,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: "http://localhost:5173",
-}));
+app.use(
+  cors({
+    origin: "https://loginwithjwt.netlify.app",
+  }),
+);
 
 app.use(express.json());
 
